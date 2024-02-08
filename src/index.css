@@ -18,20 +18,25 @@ a:hover {
   color: #6e6351;
 }
 
-
+.upload-file{
+  border: 2px solid #000; 
+  padding: 15px;
+}
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 .upload-button {
-  background-color: #28a745; /* Green */
+  background-color: #28a745; 
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  border: 2px solid #000; 
+
 }
 
 button {
