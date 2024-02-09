@@ -13,7 +13,17 @@ h1 {
 
 
 
+.swiper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 3px solid rgb(255, 0, 0);
+  width: 400px;
+  margin: 0 auto;
 
+}
 
 .navbar {
   display: flex;

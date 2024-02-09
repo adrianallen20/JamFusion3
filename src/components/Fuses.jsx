@@ -40,10 +40,10 @@ const Fuses = () => {
         {user ? (
            <>
 
-          <button onClick={signOut}>Sign out</button>
+          <button className="signout-button" onClick={signOut}>Sign out</button>
           </>
         ) : (
-          <button onClick={() => navigate("/login")}>Login</button>
+          <button className="login-button" onClick={() => navigate("/login")}>Login</button>
         )}
       </div>
 
