@@ -10,6 +10,7 @@ const Profile = () => {
   const navigate = useNavigate();
   const [file,setFile] = useState(null);
   const [profileImageUrl,setProfileImageUrl] = useState('');
+  const [username, setUsername] = useState('');
 
   const signOut = async () => {
     await firebase
@@ -49,10 +50,15 @@ const Profile = () => {
       const userDocRef = firebase.firestore().collection('users').doc(user.uid);
       //grabbing users documents
       userDocRef.get().then(doc =>{
+        console.log(doc.exists)
         if (doc.exists) {
           const userData = doc.data();
+          console.log(userData);
           if (userData.profileImageUrl) {
             setProfileImageUrl(userData.profileImageUrl);
+          }
+          if (userData.username) {
+            setUsername(userData.username);
             
           }
           
@@ -86,13 +92,40 @@ const Profile = () => {
           <button onClick={() => navigate("/login")}>Login</button>
         )}
       </div>
-      <h1>Hello, {user.email}</h1>
-    <div className="fields">
-  <img src={profileImageUrl} alt="Display Picture" className="display-picture" />
-  <input type="file" className="upload-file" onChange={handleFileChange}/>
-  <button className="upload-button" id="upload" onClick={handleUpload}>Upload Image</button>
+      <div className="preview-box"> <p> Preview Profile</p>
 </div>
 
+      <div className="three-columns">
+      <div className="column">
+      <p> Hey {username}, Tell us about yourself!</p>
+     <div className="bio"> 
+      <label className="bio-label">
+      Write your bio:
+      <textarea className="bio-box" name="postContent" rows={4} cols={40} />
+      </label>
+      <button className="bio-button" id="submit" >Update Bio </button>
+
+      </div>
+    </div>
+      
+      
+      <div className="column">
+      <p> Email: {user.email}</p>
+        <div className="fields">
+      <img src={profileImageUrl} alt="Display Picture" className="display-picture" />
+      <input type="file" className="upload-file" onChange={handleFileChange}/>
+      <button className="upload-button" id="upload" onClick={handleUpload}>Upload Image</button>
+    </div> 
+      </div>
+
+      
+      <div className="column">     
+       <p> Add your music here!</p>
+    </div>
+
+   
+
+    </div>
       
     </>
   );
