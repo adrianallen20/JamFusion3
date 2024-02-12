@@ -104,7 +104,45 @@ const Profile = () => {
       <textarea className="bio-box" name="postContent" rows={4} cols={40} />
       </label>
       <button className="bio-button" id="submit" >Update Bio </button>
-
+      </div>
+      <p> List your skills, so that others can find you!</p>
+      <p>Roles:</p>
+      <div className="roles">
+<label class="container"> Singer
+  <input type="checkbox" />
+  <span class="checkmark"></span>
+  </label>
+<label class="container">Rapper
+  <input type="checkbox"/>
+  <span class="checkmark"></span>
+</label>
+<label class="container">Producer
+  <input type="checkbox"/>
+  <span class="checkmark"></span>
+</label>
+<label class="container">Instrumentalist
+  <input type="checkbox"/>
+  <span class="checkmark"></span>
+</label>
+      </div>
+      <p>Skills:</p>
+      <div className="skills">
+<label class="container"> Guitar
+  <input type="checkbox" />
+  <span class="checkmark"></span>
+  </label>
+<label class="container">Bass Guitar
+  <input type="checkbox"/>
+  <span class="checkmark"></span>
+</label>
+<label class="container">Piano
+  <input type="checkbox"/>
+  <span class="checkmark"></span>
+</label>
+<label class="container">Drums
+  <input type="checkbox"/>
+  <span class="checkmark"></span>
+</label>
       </div>
     </div>
       
