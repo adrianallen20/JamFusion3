@@ -116,9 +116,15 @@ textarea {
   border: 3px solid rgb(247, 234, 65);
   box-sizing: border-box;
   height: 740px;
-
+  border-radius: 25px;
+  width: calc(33.33% - 30px); 
+  margin-right: 20px;
+  margin-left: 13px;
+  margin-top: 10px;
 }
-
+.column:last-child {
+  margin-right: 0;
+}
 .form input {
   flex-shrink: 0;
   width: 300px;
