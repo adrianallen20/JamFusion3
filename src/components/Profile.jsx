@@ -97,7 +97,7 @@ const Profile = () => {
 
       <div className="three-columns">
       <div className="column">
-      <p> Hey {username}, Tell us about yourself!</p>
+      <p> Hey {username}, BBBTell us about yourself!</p>
      <div className="bio"> 
       <label className="bio-label">
       Write your bio:
