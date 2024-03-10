@@ -144,6 +144,13 @@ const Profile = () => {
   <span className="checkmark"></span>
 </label>
       </div>
+      <div className="skills-tag"> 
+      <label className="tag-input">
+      Add more skills:
+      <input className="tag-box" type="text" />
+      </label>
+      <button className="tag-button" id="submit" >Add Tag </button>
+      </div>
     </div>
       
       
