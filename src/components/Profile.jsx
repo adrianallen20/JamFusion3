@@ -110,38 +110,38 @@ const Profile = () => {
       <div className="roles">
 <label class="container"> Singer
   <input type="checkbox" />
-  <span class="checkmark"></span>
+  <span className="checkmark"></span>
   </label>
-<label class="container">Rapper
+<label className="container">Rapper
   <input type="checkbox"/>
-  <span class="checkmark"></span>
+  <span className="checkmark"></span>
 </label>
-<label class="container">Producer
+<label className="container">Producer
   <input type="checkbox"/>
-  <span class="checkmark"></span>
+  <span className="checkmark"></span>
 </label>
-<label class="container">Instrumentalist
+<label className="container">Instrumentalist
   <input type="checkbox"/>
-  <span class="checkmark"></span>
+  <span className="checkmark"></span>
 </label>
       </div>
       <p>Skills:</p>
       <div className="skills">
-<label class="container"> Guitar
+<label className="container"> Guitar
   <input type="checkbox" />
-  <span class="checkmark"></span>
+  <span className="checkmark"></span>
   </label>
-<label class="container">Bass Guitar
+<label className="container">Bass Guitar
   <input type="checkbox"/>
-  <span class="checkmark"></span>
+  <span className="checkmark"></span>
 </label>
-<label class="container">Piano
+<label className="container">Piano
   <input type="checkbox"/>
-  <span class="checkmark"></span>
+  <span className="checkmark"></span>
 </label>
-<label class="container">Drums
+<label className="container">Drums
   <input type="checkbox"/>
-  <span class="checkmark"></span>
+  <span className="checkmark"></span>
 </label>
       </div>
     </div>
