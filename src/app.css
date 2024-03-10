@@ -49,7 +49,36 @@ textarea {
   /* border: 3px solid rgb(255, 0, 0); */
   width: 400px;
   margin: 0 auto;
+  border: 3px solid red;
 
+
+}
+.prev-swiper-button{
+  position: relative; right: 120px; top: 22px;
+  border: 3px solid rgb(165, 87, 42);
+}
+.next-swiper-button{
+position: relative; left: 120px;
+  border: 3px solid rgb(70, 184, 13);
+}
+.swiper-image{  
+  border: 3px solid rgb(14, 70, 133);
+  width: 300px;
+  height: 300px;
+}
+.swiper-image img {
+  width: 100%;
+  height: auto;}
+.swiper-name{
+  border: 3px solid yellow;
+  font-size: small;
+text-align: left;
+}
+.tag-input{
+  position: relative; top: 40px;
+}
+.tag-button{
+  position: relative; top: 40px;
 }
 
 .navbar {
