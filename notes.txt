@@ -4,7 +4,10 @@ skills you have - high
 location - medium/high
 ignoreing current user - low
 ignoreing liked users - low
-
+j
 matches
 tracking who liked who (by creating another collection of documneted users. convert uid to string,
  check if each user has the each others string in their arrays by checking ucrrent.user.userid, match based on this)
+
+ list simple to complex features
+ 
