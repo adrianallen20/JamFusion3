@@ -48,7 +48,7 @@ const Fuses = () => {
       </div>
 
       <h1>Fuses </h1>                      
-      <p> Fuses page Email: {user.email}</p>
+      <p> Fuses page User Email: {user.email}</p>
 
     </>
   );
